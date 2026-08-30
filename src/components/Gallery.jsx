@@ -53,7 +53,7 @@ export default function Gallery() {
               key={img.src}
               onClick={() => setLightboxIndex(i)}
             >
-              <img src={img.src} alt={img.alt} className="gallery-card__img" />
+              <img src={img.src} alt={img.alt} className="gallery-card__img" loading="lazy" />
             </div>
           ))}
         </div>
